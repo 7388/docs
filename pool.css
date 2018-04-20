@@ -1,0 +1,733 @@
+*, 
+*:after, 
+*:before {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing:border-box; 
+    box-sizing:border-box;
+}
+html, body {margin:0; padding: 0;}
+
+body {font-style:normal; font-weight: normal; font-size:14px; color:#000; font-family:Arial, Helvetica,sans-serif; ;}
+
+#wrapper {margin:0; padding:0; background-color:#fff; font-size:14px;}
+#wrapper > .inside {width:960px; margin:0 auto; display:block; position:relative; padding:0; background:#fff;
+  /*
+box-shadow: 0px 0px 50px #d2d2db;
+  */
+}
+#wrapper > .inside.wide {width:100% !important;}
+
+.hide {display:none !important}
+
+p.empty {margin:0;}
+a {color:inherit; outline:none; text-decoration:none}
+a:hover {text-decoration:underline;}
+img {max-width:100%;}
+
+#header {}
+#header:after {content:''; clear: both;}
+#header h1#logo {margin:10px; padding:0; line-height:normal;}
+#header h1#logo a {color:#222; font-size:20px; display:block; margin:0; padding:0; font-weight:bold; font-style:normal; text-decoration:none;}
+.topArea {margin:0;padding:0; position:relative; display:table; width:100%;}
+.topArea:after {content:''; clear: both; display:table}
+.topArea h1 {float:left;}
+.topArea h1 img {border:0; margin:0; padding:0; display:block;}
+.topArea .phone {margin:10px; display:table-cell; vertical-align:middle; text-align:right; padding-right:10px}
+.topArea .phone a {color:inherit; text-decoration:none}
+.topArea .phone a:hover {text-decoration:underline;}
+
+#page {display: block; position: relative;margin:0; padding:10px 10px 0 10px;}
+#page:after {content:''; clear: both; display: table}
+
+#sidebar {display:block; min-height:200px; width:20%; margin:0; padding:0;}
+#page.left #sidebar {float:left;}
+#page.right #sidebar {float: right}
+#page.wide #sidebar {display:none;}
+
+#categories {margin:0 0 10px 0; padding:0}
+#categoriesside,
+#categories ul {margin:0; padding: 0; list-style: none; }
+#categoriesside li,
+#categories ul li {margin:0; padding: 0}
+#categoriesside li a,
+#categories ul li a {border-top:1px #ccc solid; color:inherit; text-decoration: none; display: block; margin:0; padding:5px 5px 5px 10px; word-wrap: break-word}
+#categoriesside li li a,
+#categories ul li li a {padding-left:20px}
+#categoriesside li li li a,
+#categories ul li li li a {padding-left:30px}
+#categoriesside li a:hover,
+#categories ul li a:hover {background:#f4f4f4;}
+#categoriesside > li:first-child > a,
+#categories > ul > li:first-child > a {border: none}
+
+#categories .content {padding:0; border-top:none}
+
+#sidebar .content {overflow: hidden;}
+
+#container {margin:0; padding:0; width:100%}
+#page.left #container {float: right; width: 80%; padding:0 0 0 10px;}
+#page.right #container {float: left; width: 80%; padding:0 10px 0 0}
+#page.wide #container {width:100% !important; padding:0;}
+
+.block {display:block;}
+.block:after {content:''; clear: both; display: table}
+
+.block h1.title,
+.block h2.title,
+.block h3.title {background:#f4f4f4; font-size:16px; font-weight: bold; line-height: normal; border: 1px #ccc solid; margin:0; padding:10px}
+
+.block .content {margin:0 0 10px 0; padding:10px; background:#fff; border:1px #ccc solid;}
+.block .content h2 {font-size:18px;}
+
+.block #gallery {margin:0 0 10px 0; padding-left:0; padding-right:0; padding-bottom:0}
+
+#sidebar .product .prod {float: none; width: 100%; clear: both}
+.product {display:block; position: relative; margin: 0; padding: 0}
+.product:after {content: ''; clear: both; display: table}
+.product .prod {float: left; text-align:center; width:25%; display: block;}
+.product .prod.first {}
+.product .prod.last {}
+.product .prod .image {margin:0 auto; padding: 0 5px; display:block;}
+.product .prod .image span {display:block; margin:0; padding:0; overflow:hidden;}
+.product .prod .image span a {width:100%; height: 150px; position: relative; display: block;}
+.product .prod .image span a img {max-width: 100%; max-height:150px; position: absolute; left:0; top:0; right:0; bottom:0; margin: auto; border:none; padding:0}
+.product .prod .price,
+.product .prod .title {padding:0 5px;} 
+.product .prod .title h4 {font-weight:normal;margin:0; padding:10px 0;}
+.product .prod .title h4 a {text-decoration: none}
+.product .prod .title h4 a:hover {text-decoration: underline;}
+.product .prod .price p {margin:0; padding:0}
+.product .prod .btn {display:none; text-align: center; margin:0; padding:10px 0; }
+.product .prod .btn a {display: inline-block; text-decoration: none; padding:0 10px;height:25px; line-height: 25px; color:#fff; background:#222;}
+.product .prod .btn a:hover {text-decoration: underline;}
+
+#Samecategoryitems8 .prod.it5 {clear:both;}
+
+.price span {color:green;}
+del {color:red;}
+
+.JA_IS {width: 100%; border-collapse: collapse;}
+.JA_IS, 
+.JA_IS th, 
+.JA_IS td {border: 1px solid #ccc; font-size:inherit;}
+.JA_IS th, 
+.JA_IS td {padding:5px;}
+.JA_IS .is1,
+.JA_IS .is3,
+.JA_IS .is5,
+.JA_IS .is7,
+.JA_IS .is9 {background:#f4f4f4;}
+
+#feedback .JTI_FeedbackHead {background:#f5f5f5; font-weight:bold;}
+#feedback .JTI_FeedbackHead td {padding:10px 5px;}
+#feedback .JTI_feedback,
+#feedback table.store_feedback {text-align:left; width:100%; font-size:inherit; }
+#feedback table.store_feedback tr.even {background:#F9F9F9;}
+#feedback .JTI_feedback tr td,
+#feedback table.store_feedback tr td {padding:5px;}
+#feedback .JTI_feedback tbody tr:hover,
+#feedback table.store_feedback tbody tr:hover {background:#F5F5F5;}
+#feedback .JTI_feedback thead tr,
+#feedback table.store_feedback thead tr {border-bottom:1px #ccc solid;}
+#feedback .JTI_feedback thead th,
+#feedback table.store_feedback thead th {padding:5px 0;}
+
+#footer {display:block;}
+#footer .column:after,
+#footer:after {content:''; clear: both; display: table}
+#footer .column {padding:0 0 10px 10px; position:relative;}
+#footer .block-placeholder {width:calc(33.333% - 10px); padding:0; margin:10px 10px 0 0; float:left;}
+#footer .block {float: left; width: 33.333%; display: block; padding:0}
+#footer .block > div {margin:10px 10px 0 0;}
+#footer .block .content {margin-bottom:0;}
+#footer ol {margin:0 0 0 15px; padding:0;}
+#footer ul {margin:0; padding:0; list-style: none}
+#footer  .column.it2 .block {width:50%;}
+#footer  .column.it1 .block {width:100%;}
+#footer  .column.it3 .block {width:33.333%;}
+
+.topMenu {clear: both; display: block; margin:0; padding: 0}
+
+#menu {display:block; width:100%; min-height:40px; background:#666; margin:0; box-sizing: border-box;}
+#menu ul {display:block; margin:0px; padding:0px; width:100%; position:relative;}
+#menu ul:after {content:''; clear:both; display:table;}
+#menu ul li {display:block; float:left; position: relative;}
+#menu ul li.JA_category.JA_last {background:none;}
+#menu ul li[data-nav="categories"] label,
+#menu ul li a {display:table-cell; vertical-align:middle;line-height:18px; text-align:center; text-decoration:none; color:#fff; text-transform:capitalize; padding:0 20px; height:40px; margin:0;} 
+#menu ul li:hover > a {color:#fff; background:#222}
+#menu ul li:hover ul {display:block;}
+#menu ul ul {position: absolute; display: none; white-space:nowrap; width: auto; left:0; top:40px; z-index: 2;}
+#menu ul ul li {float:none;}
+#menu ul ul li a {display:block; cursor: pointer; text-align:left; line-height: normal; padding:10px 20px; border-top:1px rgba(255,255,255,0.2) solid; height: auto}
+#menu ul ul li a.close,
+#menu ul li[data-nav="categories"] a.close,
+#menu ul ul ul {display: none !important}
+
+#menu .JA_category2.JA_first a {border-top:none !important;}
+#menu .JA_category2.JA_last a {border-bottom:none !important;}
+#menu .JA_category2.JA_first a:hover {border-top:2px solid #fff !important;}
+#menu .JA_category2.JA_last a:hover {border-bottom:2px solid #fff !important;}
+#menu .level2 .JA_category2:hover ul {display:none !important;}
+
+.show-menu {text-decoration:none; color:#fff; text-transform: uppercase; text-align:left; padding:0 10px 0 40px; cursor: pointer; display:none; position:relative; height:40px; line-height:40px;}
+.show-menu:before {display: block;content: ""; border-top: 4px solid #fff; position: absolute; height: 11px; width: 20px;left: 10px; top: 11px;border-bottom: 4px solid #fff;border-top: 4px solid #fff;}
+.show-menu:after {display: block; content: ""; background: #fff; position: absolute; height: 4px; width: 20px; left: 10px; top: 25px;}
+#respCats,
+#show-menu[type=checkbox] {display:none}
+.topMenu #show-menu[type=checkbox]:checked ~ #menu {display:block !important}
+
+#respCats {display: none}
+#menu li.categories .respCats {display:block; color:#fff;}
+
+#slideshow {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 0 20px 0;
+  padding: 0;
+  -moz-perspective: 1300px;
+  -ms-perspective: 1300px;
+  -webkit-perspective: 1300px;
+  perspective: 1300px;
+ clear:both;
+  text-align: left;
+  position: relative;
+  color: #fff;
+}
+#slideshow > input {
+  display: none;
+}
+#slideshow > input:nth-of-type(10):checked ~ ul li:first-of-type {
+  margin-left: -900%;
+}
+#slideshow > input:nth-of-type(9):checked ~ ul li:first-of-type {
+  margin-left: -800%;
+}
+#slideshow > input:nth-of-type(8):checked ~ ul li:first-of-type {
+  margin-left: -700%;
+}
+#slideshow > input:nth-of-type(7):checked ~ ul li:first-of-type {
+  margin-left: -600%;
+}
+#slideshow > input:nth-of-type(6):checked ~ ul li:first-of-type {
+  margin-left: -500%;
+}
+#slideshow > input:nth-of-type(5):checked ~ ul li:first-of-type {
+  margin-left: -400%;
+}
+#slideshow > input:nth-of-type(4):checked ~ ul li:first-of-type {
+  margin-left: -300%;
+}
+#slideshow > input:nth-of-type(3):checked ~ ul li:first-of-type {
+  margin-left: -200%;
+}
+#slideshow > input:nth-of-type(2):checked ~ ul li:first-of-type {
+  margin-left: -100%;
+}
+#slideshow > input:nth-of-type(1):checked ~ ul li:first-of-type {
+  margin-left: 0%;
+}
+#slideshow > ul {
+  position: relative;
+  width: 100%;
+display: block;
+  z-index: 1;
+  font-size: 0;
+  line-height: 0;
+  background-color: #000000;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#slideshow > ul > li {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height:auto;
+  max-height:100%;
+  margin:0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 15px;
+  font-size: initial;
+  text-align: center;
+  line-height: normal;
+  -moz-transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+  transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+  vertical-align: top;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  white-space: normal;
+}
+#slideshow ul li img {margin:0 auto; padding:0; border:none; display: block; max-width: 100%;}
+#slideshow > .navigation {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  z-index: 10;
+  margin-bottom: -10px;
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#slideshow > .navigation > div {
+  margin-left: -100%;
+}
+#slideshow > .navigation label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 0 4px;
+  padding: 4px;
+  background: #3A3A3A;
+}
+#slideshow > .navigation label:hover:after {
+  opacity: 1;
+}
+#slideshow > .navigation label:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -6px;
+  margin-top: -6px;
+  background: #71ad37;
+  border-radius: 50%;
+  padding: 6px;
+  opacity: 0;
+}
+#slideshow > .arrows {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#slideshow.inside {margin:0;}
+#slideshow.inside .navigation {
+  bottom: 10px;
+  margin-bottom: 10px;
+}
+#slideshow.inside .navigation label {
+  border: 1px solid #7e7e7e;
+}
+#slideshow > input:nth-of-type(1):checked ~ .navigation label:nth-of-type(1):after,
+#slideshow > input:nth-of-type(2):checked ~ .navigation label:nth-of-type(2):after,
+#slideshow > input:nth-of-type(3):checked ~ .navigation label:nth-of-type(3):after,
+#slideshow > input:nth-of-type(4):checked ~ .navigation label:nth-of-type(4):after,
+#slideshow > input:nth-of-type(5):checked ~ .navigation label:nth-of-type(5):after,
+#slideshow > input:nth-of-type(6):checked ~ .navigation label:nth-of-type(6):after,
+#slideshow > input:nth-of-type(7):checked ~ .navigation label:nth-of-type(7):after,
+#slideshow > input:nth-of-type(8):checked ~ .navigation label:nth-of-type(8):after,
+#slideshow > input:nth-of-type(9):checked ~ .navigation label:nth-of-type(9):after,
+#slideshow > input:nth-of-type(10):checked ~ .navigation label:nth-of-type(10):after,
+#slideshow > input:nth-of-type(11):checked ~ .navigation label:nth-of-type(11):after {
+  opacity: 1;
+}
+#slideshow > .arrows {
+  position: absolute;
+  left: -31px;
+  top: 50%;
+  width: 100%;
+  height: 26px;
+  padding: 0 31px;
+  z-index: 0;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+#slideshow > .arrows label {
+  display: none;
+  position: absolute;
+  top: -50%;
+  padding: 13px;
+  box-shadow: inset 2px -2px 0 1px #3A3A3A;
+  cursor: pointer;
+  -moz-transition: box-shadow 0.15s, margin 0.15s;
+  -o-transition: box-shadow 0.15s, margin 0.15s;
+  -webkit-transition: box-shadow 0.15s, margin 0.15s;
+  transition: box-shadow 0.15s, margin 0.15s;
+}
+#slideshow > .arrows label:hover {
+  box-shadow: inset 3px -3px 0 2px #71ad37;
+  margin: 0 0px;
+}
+#slideshow > .arrows label:before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  height: 300%;
+  width: 300%;
+}
+#slideshow.infinity > input:first-of-type:checked ~ .arrows label.goto-last,
+#slideshow > input:nth-of-type(1):checked ~ .arrows > label:nth-of-type(0),
+#slideshow > input:nth-of-type(2):checked ~ .arrows > label:nth-of-type(1),
+#slideshow > input:nth-of-type(3):checked ~ .arrows > label:nth-of-type(2),
+#slideshow > input:nth-of-type(4):checked ~ .arrows > label:nth-of-type(3),
+#slideshow > input:nth-of-type(5):checked ~ .arrows > label:nth-of-type(4),
+#slideshow > input:nth-of-type(6):checked ~ .arrows > label:nth-of-type(5),
+#slideshow > input:nth-of-type(7):checked ~ .arrows > label:nth-of-type(6),
+#slideshow > input:nth-of-type(8):checked ~ .arrows > label:nth-of-type(7),
+#slideshow > input:nth-of-type(9):checked ~ .arrows > label:nth-of-type(8),
+#slideshow > input:nth-of-type(10):checked ~ .arrows > label:nth-of-type(9),
+#slideshow > input:nth-of-type(11):checked ~ .arrows > label:nth-of-type(10) {
+  display: block;
+  left: 0;
+  right: auto;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#slideshow.infinity > input:last-of-type:checked ~ .arrows label.goto-first,
+#slideshow > input:nth-of-type(1):checked ~ .arrows > label:nth-of-type(2),
+#slideshow > input:nth-of-type(2):checked ~ .arrows > label:nth-of-type(3),
+#slideshow > input:nth-of-type(3):checked ~ .arrows > label:nth-of-type(4),
+#slideshow > input:nth-of-type(4):checked ~ .arrows > label:nth-of-type(5),
+#slideshow > input:nth-of-type(5):checked ~ .arrows > label:nth-of-type(6),
+#slideshow > input:nth-of-type(6):checked ~ .arrows > label:nth-of-type(7),
+#slideshow > input:nth-of-type(7):checked ~ .arrows > label:nth-of-type(8),
+#slideshow > input:nth-of-type(8):checked ~ .arrows > label:nth-of-type(9),
+#slideshow > input:nth-of-type(9):checked ~ .arrows > label:nth-of-type(10),
+#slideshow > input:nth-of-type(10):checked ~ .arrows > label:nth-of-type(11),
+#slideshow > input:nth-of-type(11):checked ~ .arrows > label:nth-of-type(12) {
+  display: block;
+  right: 0;
+  left: auto;
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+#slideshow > input:last-of-type:checked ~ .arrows label.goto-first {
+    display: none
+}
+
+.wide #slideshow > .arrows {padding:0; left:0; z-index:1;}
+.wide #slideshow > .arrows label, 
+.wide #slideshow > .arrows label:hover {margin:0 15px}
+
+.gallery {width:100%; position:relative; padding-top:350px; padding-right: 1%; margin:0 auto;}
+.gallery:after {content:''; clear: both; display: table;}
+.gallery > img {position:absolute; left:0; top:0; max-width:100%; margin:auto; right:0; max-height:330px; padding:10px;}
+.gallery input[name='slide_switch'] {display:none}
+.gallery label {margin:0 0 1% 1%; padding:0; float:left; border:1px solid #999; background:#fff;  cursor:pointer; width:19%; height:100px; position:relative;}
+.gallery label img {display:block; width:auto; max-width:100%; position:absolute; margin:auto; padding:0; right:0; left:0; top:0; bottom:0; max-height:100%;}
+.gallery > input[name='slide_switch']:checked+label {border-color:#666;opacity:1}
+.gallery > input[name='slide_switch'] ~ img {opacity:0;transform:scale(1)}
+.gallery > input[name='slide_switch']:checked+label+img {opacity:1;transform:scale(1)} 
+
+@media screen and (max-width: 780px) {
+.gallery label {width:24%;}
+}
+@media screen and (max-width: 580px) {
+.gallery label {width:32.33%;}
+}
+@media screen and (max-width: 380px) {
+.gallery label {width:49%;}
+}
+
+
+#tabs {
+    padding:0;
+    margin: 0 auto;
+    overflow:hidden;
+}
+#tabs .content {padding:0; margin:0 0 10px 0; background:#fff; border:none; border:1px solid #ccc;}
+#tabs section {
+    display: none;
+    padding: 10px;
+    position: relative;
+    margin:0;
+}
+#tabs input {
+    display: none;
+}
+#tabs label:hover {
+    color: black;
+    cursor: pointer;
+}
+#tabs .box {
+    margin:0;
+    padding:0;
+    position: relative;
+}
+.tabNames label {
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+    color: #666;
+    border: 1px solid transparent;
+    border-right: 1px solid #ccc;
+    float:none; 
+    display: table-cell;
+    vertical-align:middle;
+    position: relative;
+    border-bottom:2px solid #ccc;
+    background: #f4f4f4;
+    text-align: center;
+    font-size:16px;
+    /*
+    color: #fff
+    */
+}
+.tabNames label:last-child {
+    border-right:none;
+}
+#tab0 ~ .tabNames,
+#tab1 ~ .tabNames,
+#tab2 ~ .tabNames,
+#tab3 ~ .tabNames,
+#tab4 ~ .tabNames,
+#tab5 ~ .tabNames {
+    display: none;
+}
+#tab0:checked ~ #content0,
+#tab0:checked ~ .tabNames,
+#tab1:checked ~ #content1,
+#tab1:checked ~ .tabNames,
+#tab2:checked ~ #content2,
+#tab2:checked ~ .tabNames,
+#tab3:checked ~ #content3,
+#tab3:checked ~ .tabNames,
+#tab4:checked ~ #content4,
+#tab4:checked ~ .tabNames,
+#tab5:checked ~ #content5,
+#tab5:checked ~ .tabNames {
+    margin:0;
+    display: table;
+    width: 100%
+}
+#tab0:checked ~ .tabNames label[for=tab0],
+#tab1:checked ~ .tabNames label[for=tab1],
+#tab2:checked ~ .tabNames label[for=tab2],
+#tab3:checked ~ .tabNames label[for=tab3],
+#tab4:checked ~ .tabNames label[for=tab4],
+#tab5:checked ~ .tabNames label[for=tab5] {
+    background: white;
+    color:black;
+    border-bottom-color: transparent;
+}
+@media screen and (max-width: 650px) {
+    .tabNames i:before, 
+    .tabNames i:after {
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+    }
+    .tabNames i {
+      position: absolute;
+      -webkit-transform: translate(-6px, 0);
+      -moz-transform: translate(-6px, 0);
+      -ms-transform: translate(-6px, 0);
+      -o-transform: translate(-6px, 0);
+      transform: translate(-6px, 0);
+      margin-top:5px;
+      right: 10px;
+    }
+    .tabNames i:before,
+    .tabNames i:after {
+      content: '';
+      position: absolute;
+      background: #ccc;
+      width: 3px;
+      height: 9px;
+    }
+    .tabNames i:before {
+      -webkit-transform: translate(-2px, 0) rotate(-45deg);
+      -moz-transform: translate(-2px, 0) rotate(-45deg);
+      -ms-transform: translate(-2px, 0) rotate(-45deg);
+      -o-transform: translate(-2px, 0) rotate(-45deg);
+      transform: translate(-2px, 0) rotate(-45deg);
+    }
+    .tabNames i:after {
+      -webkit-transform: translate(2px, 0) rotate(45deg);
+      -moz-transform: translate(2px, 0) rotate(45deg);
+      -ms-transform: translate(2px, 0) rotate(45deg);
+      -o-transform: translate(2px, 0) rotate(45deg);
+      transform: translate(2px, 0) rotate(45deg);
+    }
+    #tabs input:checked ~ .tabNames i:before {
+      -webkit-transform: translate(2px, 0) rotate(-45deg);
+      -moz-transform: translate(2px, 0) rotate(-45deg);
+      -ms-transform: translate(2px, 0) rotate(-45deg);
+      -o-transform: translate(2px, 0) rotate(-45deg);
+      transform: translate(2px, 0) rotate(-45deg);
+      background: black;
+    }
+    #tabs input:checked ~ .tabNames i:after {
+      -webkit-transform: translate(-2px, 0) rotate(45deg);
+      -moz-transform: translate(-2px, 0) rotate(45deg);
+      -ms-transform: translate(-2px, 0) rotate(45deg);
+      -o-transform: translate(-2px, 0) rotate(45deg);
+      transform: translate(-2px, 0) rotate(45deg);
+      background: black;
+    }
+    #tab0 ~ .tabNames,
+    #tab0 ~ .tabNames label[for=tab0],
+    #tab1 ~ .tabNames,
+    #tab1 ~ .tabNames label[for=tab1],
+    #tab2 ~ .tabNames,
+    #tab2 ~ .tabNames label[for=tab2],
+    #tab3 ~ .tabNames,
+    #tab3 ~ .tabNames label[for=tab3],
+    #tab4 ~ .tabNames,
+    #tab4 ~ .tabNames label[for=tab4],
+    #tab5 ~ .tabNames,
+    #tab5 ~ .tabNames label[for=tab5]  {
+        display: inline-block;
+        width: 100%;
+    }
+    #tab0 ~ .tabNames label[for=tab1],
+    #tab0 ~ .tabNames label[for=tab2],
+    #tab0 ~ .tabNames label[for=tab3],
+    #tab0 ~ .tabNames label[for=tab4],
+    #tab0 ~ .tabNames label[for=tab5],
+    #tab1 ~ .tabNames label[for=tab0],
+    #tab1 ~ .tabNames label[for=tab2],
+    #tab1 ~ .tabNames label[for=tab3],
+    #tab1 ~ .tabNames label[for=tab4],
+    #tab1 ~ .tabNames label[for=tab5],
+    #tab2 ~ .tabNames label[for=tab0],
+    #tab2 ~ .tabNames label[for=tab1],
+    #tab2 ~ .tabNames label[for=tab3],
+    #tab2 ~ .tabNames label[for=tab4],
+    #tab2 ~ .tabNames label[for=tab5],
+    #tab3 ~ .tabNames label[for=tab0],
+    #tab3 ~ .tabNames label[for=tab1],
+    #tab3 ~ .tabNames label[for=tab2],
+    #tab3 ~ .tabNames label[for=tab4],
+    #tab3 ~ .tabNames label[for=tab5],
+    #tab4 ~ .tabNames label[for=tab0],
+    #tab4 ~ .tabNames label[for=tab1],
+    #tab4 ~ .tabNames label[for=tab2],
+    #tab4 ~ .tabNames label[for=tab3],
+    #tab4 ~ .tabNames label[for=tab5],
+    #tab5 ~ .tabNames label[for=tab0],
+    #tab5 ~ .tabNames label[for=tab1],
+    #tab5 ~ .tabNames label[for=tab2],
+    #tab5 ~ .tabNames label[for=tab3],
+    #tab5 ~ .tabNames label[for=tab4],
+    #tab0:checked ~ .tabNames label[for=tab1],
+    #tab0:checked ~ .tabNames label[for=tab2],
+    #tab0:checked ~ .tabNames label[for=tab3],
+    #tab0:checked ~ .tabNames label[for=tab4],
+    #tab0:checked ~ .tabNames label[for=tab5],
+    #tab1:checked ~ .tabNames label[for=tab0],
+    #tab1:checked ~ .tabNames label[for=tab2],
+    #tab1:checked ~ .tabNames label[for=tab3],
+    #tab1:checked ~ .tabNames label[for=tab4],
+    #tab1:checked ~ .tabNames label[for=tab5],
+    #tab2:checked ~ .tabNames label[for=tab0],
+    #tab2:checked ~ .tabNames label[for=tab1],
+    #tab2:checked ~ .tabNames label[for=tab3],
+    #tab2:checked ~ .tabNames label[for=tab4],
+    #tab2:checked ~ .tabNames label[for=tab5],
+    #tab3:checked ~ .tabNames label[for=tab0],
+    #tab3:checked ~ .tabNames label[for=tab1],
+    #tab3:checked ~ .tabNames label[for=tab2],
+    #tab3:checked ~ .tabNames label[for=tab4],
+    #tab3:checked ~ .tabNames label[for=tab5],
+    #tab4:checked ~ .tabNames label[for=tab0],
+    #tab4:checked ~ .tabNames label[for=tab1],
+    #tab4:checked ~ .tabNames label[for=tab2],
+    #tab4:checked ~ .tabNames label[for=tab3],
+    #tab4:checked ~ .tabNames label[for=tab5],
+    #tab5:checked ~ .tabNames label[for=tab0],
+    #tab5:checked ~ .tabNames label[for=tab1],
+    #tab5:checked ~ .tabNames label[for=tab2],
+    #tab5:checked ~ .tabNames label[for=tab3],
+    #tab5:checked ~ .tabNames label[for=tab4]{
+        display: none
+    }
+    #tab0:checked ~ section,
+    #tab1:checked ~ section,
+    #tab2:checked ~ section,
+    #tab3:checked ~ section,
+    #tab4:checked ~ section,
+    #tab5:checked ~ section {
+
+    }
+    #tabs .box:last-of-type section {
+        border-bottom:none !important;
+    }
+    #tabs section,
+    .tabNames label {
+        border-right:none;
+    }
+    .tabNames label:last-child {
+        border-bottom:none;
+    }
+}
+
+img {max-width: 100% !important}
+
+@media screen and (max-width :760px){
+#menu {position:static;display:none; height:auto; width:100%;}
+#menu ul {display:block;}
+#menu ul li {border-top:1px rgba(255,255,255,0.2) solid; position: relative; display:block; float:none; width: 100%}
+#menu ul li a {width:100%; padding:0 10px; display:block; line-height:40px; text-align:left; box-sizing:border-box;}
+#menu ul li a:hover {border:none;}
+#menu ul li[data-nav="categories"] label {cursor:pointer; display: block; padding:0 10px; line-height:40px; text-align:left;}
+#menu ul li[data-nav="categories"]:after {position:absolute; width: 0; right:10px; top:15px; content:''; height: 0;border-style: solid;border-width: 10px 5px 0 5px;border-color: #fff transparent transparent transparent;}
+#menu ul li[data-nav="categories"]:hover ul {display: none}
+#menu ul li ul {display: none; position: relative; width: 100%; top:0}
+#menu ul li ul li,
+#menu ul li ul li a {border:0;}
+#menu ul li ul li a {padding:8px 10px 8px 30px;}
+#menu ul li #respCats:checked ~ ul {display: block }
+
+.show-menu {display:block}
+#sidebar {display: none}
+#page #container {float: none !important; width: 100% !important; padding:0 !important}
+#footer .block {float: none !important; width: 100% !important}
+#footer .block:first-child > div {margin-top:0}
+#slideshow ul,
+#slideshow ul li {height:auto !important}
+#slideshow ul li img {position: relative !important;}
+.product .prod {width:50%;}
+.product .prod.it3,
+.product .prod.it5,
+.product .prod.it7,
+.product .prod.it9 {clear: both}
+#slideshow > .arrows label:before,
+.topArea .phone {display: none}
+#slideshow > .arrows label {padding:10px;}
+}
+
+@media screen and (max-width :640px){
+.topArea h1 {float: none; text-align: center}
+#header h1#logo a {display: inline-block; margin:0 auto;}
+#feedback .JTI_FeedbackHead1,
+#feedback .JTI_FeedbackHead4,
+#feedback .JTI_FeedbackRow1,
+#feedback .JTI_FeedbackRow4,
+#slideshow > .navigation {display: none !important}
+}
+
+@media screen and (max-width :480px){
+#feedback .content {padding:0}
+#feedback .JTI_feedback tr td {word-break:break-all;}
+}
